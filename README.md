@@ -4,7 +4,7 @@
 
 ​		Samuel Reichör
 
-#### Co. Founder 
+#### Co. Founder  & Software
 
 ​		Niklas Straßl
 
