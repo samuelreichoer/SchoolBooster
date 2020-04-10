@@ -1,0 +1,179 @@
+
+  .html{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+.logo{transition:all 300ms;-webkit-transition: all 300ms;-moz-transition: all 300ms; -o-transition: all 300ms;}
+
+#nav-bar{
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, 	#58a565,	#1d8d5d);
+    padding: 0 !important;
+ 
+}
+
+
+.navbar-nav li{
+    padding: 0 15px; 
+
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+
+.nav-link{
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.nav-item{
+    color: #ffffff !important;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 22px;
+    text-emphasis: none;
+}
+
+.school{
+    font-weight: 800;
+    color: 	#123738 !important;
+    font-size: 30px;
+    
+}
+
+.fa-bars{
+    color: #ffffff !important;
+    font-size: 40px !important;
+}
+
+.navbar-toggler{
+    outline: none;
+}
+
+/*----------------------------Login form--------------------------------*/
+
+.login{
+    min-height: 100% !important;
+
+}
+
+.box{
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 50%);
+}
+  .box h1{
+    color: #123738;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+  }
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #58a565;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white !important;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #58a565;;
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #58a565;;
+    padding: 14px 40px;
+    outline: none;
+    color: #123738 !important;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #58a565;
+    color: #ffffff !important;
+  }
+
+  .link{
+      color: #123738 !important;
+  }
+  /*Footer*/
+
+  #footer{
+    background-image: linear-gradient(to right, #58a565,	#1d8d5d) !important;
+    color: #ffffff;
+}
+
+.brand{
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 22px;
+   
+}
+
+.links{
+    display: block;
+    color: white !important;
+}
+.col-out {
+    display: relative;
+  }
+   
+  .col-in {
+    display: absolute;
+   
+    transform: translate(0, +20%);
+  }
+
+  .subscribe{
+    color: #ffffff !important;
+    padding: 8px, 25px;
+    border: none !important;
+    border-radius: 20px;
+    background-color: #123738 !important;
+    margin-top: 20px;
+    text-align: center;
+  }
+   
+  .footer_section3{
+    transform: translateY(30px);
+  }
+
+  .copyright{
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+      text-align: center;
+  }
+
+  
