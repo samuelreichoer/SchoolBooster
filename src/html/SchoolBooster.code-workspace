@@ -2,9 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\img"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "OnlineNachhilfe"
+		"liveServer.settings.multiRootWorkspaceName": "html"
 	}
 }
