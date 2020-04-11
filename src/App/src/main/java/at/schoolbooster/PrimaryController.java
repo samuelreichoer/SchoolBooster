@@ -24,10 +24,21 @@ public class PrimaryController {
     @FXML
     private Tab datesTab;
 
+    @FXML
     private double tabWidth = 90.0;
+    @FXML
     public static int lastSelectedTabIndex = 0;
 
-    private void configureTabPane() {
+    public PrimaryController() {
+    }
+
+    @FXML
+    private void initialize()
+    {
+    }
+
+    @FXML
+    public void configureTabPane() {
         tabContainer.setTabMinWidth(tabWidth);
         tabContainer.setTabMaxWidth(tabWidth);
         tabContainer.setTabMinHeight(tabWidth);
@@ -39,6 +50,7 @@ public class PrimaryController {
         configureTab(datesTab, "Termine", "img/icon.png");
     }
 
+    @FXML
     private void configureTab(Tab tab, String title, String iconPath) {
 
         double imageWidth = 40.0;
