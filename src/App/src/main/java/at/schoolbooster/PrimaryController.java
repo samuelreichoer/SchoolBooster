@@ -10,6 +10,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.TextAlignment;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class PrimaryController {
 
     @FXML
@@ -33,25 +36,27 @@ public class PrimaryController {
     }
 
     @FXML
-    private void initialize()
-    {
+    private void initialize() throws FileNotFoundException {
+        configureTabPane();
     }
 
     @FXML
-    public void configureTabPane() {
+    public void configureTabPane() throws FileNotFoundException {
         tabContainer.setTabMinWidth(tabWidth);
         tabContainer.setTabMaxWidth(tabWidth);
         tabContainer.setTabMinHeight(tabWidth);
         tabContainer.setTabMaxHeight(tabWidth);
         tabContainer.setRotateGraphic(true);
 
-        configureTab(timetableTab, "Stundenplan", "img/icon.png");
-        configureTab(checklistTab, "Checkliste", "img/icon.png");
-        configureTab(datesTab, "Termine", "img/icon.png");
+        String localDir = System.getProperty("user.dir");
+
+        configureTab(timetableTab, "Stundenplan", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
+        configureTab(checklistTab, "Checkliste", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
+        configureTab(datesTab, "Termine", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
     }
 
     @FXML
-    private void configureTab(Tab tab, String title, String iconPath) {
+    private void configureTab(Tab tab, String title, FileInputStream iconPath) {
 
         double imageWidth = 40.0;
 
