@@ -42,6 +42,7 @@ public class PrimaryController {
 
     @FXML
     public void configureTabPane() throws FileNotFoundException {
+
         tabContainer.setTabMinWidth(tabWidth);
         tabContainer.setTabMaxWidth(tabWidth);
         tabContainer.setTabMinHeight(tabWidth);

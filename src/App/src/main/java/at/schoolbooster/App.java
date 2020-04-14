@@ -15,7 +15,11 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"));
+
+        scene.getStylesheets().add(getClass().getResource("global.css").toExternalForm());
         stage.setScene(scene);
+        stage.setTitle("SchoolBooster");
+
         stage.show();
     }
 

@@ -1,4 +1,4 @@
-.root {
+/* .root {
     -fx-base: white;
     -fx-color: -fx-base;
 
@@ -14,7 +14,10 @@
     -jfx-dark-secondary-color: -fx-focus-color;
 }
 
- /* JFX Tab Pane */
+.jfx-vbox {
+    -fx-background-color : #123738;
+}
+
 .jfx-tab-pane .headers-region {
     -fx-background-color: -fx-accent;
 }
@@ -33,4 +36,4 @@
 
 .tab-selected-line {
     -fx-background-color: -fx-focus-color;
-}
+} */
