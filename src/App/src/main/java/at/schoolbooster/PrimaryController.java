@@ -40,9 +40,9 @@ public class PrimaryController {
 
         String localDir = System.getProperty("user.dir");
 
-        configureTab(timetableTab, "Stundenplan", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
-        configureTab(checklistTab, "Checkliste", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
-        configureTab(datesTab, "Termine", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/icon.png"));
+        configureTab(timetableTab, "Stundenplan", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/tab_icon.png"));
+        configureTab(checklistTab, "Checkliste", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/tab_icon.png"));
+        configureTab(datesTab, "Termine", new FileInputStream(localDir + "/src/main/resources/at/schoolbooster/img/tab_icon.png"));
     }
 
     @FXML

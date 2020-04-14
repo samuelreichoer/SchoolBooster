@@ -24,7 +24,7 @@
 
 .tab-pane .tab:selected
 {
-    -fx-background-color: #3c3c3c;
+    -fx-background-color: grey;
 }
 
 .jfx-tab-pane .tab-header-background {
