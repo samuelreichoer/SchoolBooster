@@ -41,7 +41,7 @@
 }
 
 .tab:selected {
-    -fx-background-color: #1d5557;
+    -fx-background-color: #3f5b58;
     -fx-background-radius: 0;
     -fx-background-insets: 0;
 }
