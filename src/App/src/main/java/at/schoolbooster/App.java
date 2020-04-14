@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
@@ -16,9 +19,10 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"));
 
-        scene.getStylesheets().add(getClass().getResource("global.css").toExternalForm());
+        scene.getStylesheets().add((new File("global.css")).toURI().toURL().toExternalForm());
         stage.setScene(scene);
         stage.setTitle("SchoolBooster");
+        stage.getIcons().add(new Image(this.getClass().getResourceAsStream("icon.png")));
 
         stage.show();
     }
