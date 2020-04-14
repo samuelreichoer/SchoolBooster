@@ -1,36 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.schoolbooster.PrimaryController">
+<AnchorPane stylesheets="@../../../../../global.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.schoolbooster.PrimaryController">
    <children>
-      <StackPane layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" stylesheets="@global.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+      <StackPane layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
          <children>
-            <TabPane fx:id="tabContainer" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+            <TabPane fx:id="tabContainer" prefHeight="635.0" prefWidth="1300.0" side="LEFT" styleClass="tab-pane" tabClosingPolicy="UNAVAILABLE">
                <tabs>
-                  <Tab fx:id="timetableTab" text="timetable">
+                  <Tab fx:id="timetableTab">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="662.0" prefWidth="1234.0" />
                     </content>
+                     <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/tab_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Tab>
-                  <Tab fx:id="checklistTab" text="checklist">
+                  <Tab fx:id="checklistTab">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
+                     <graphic>
+                        <ImageView fitHeight="74.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/tab_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Tab>
-                  <Tab fx:id="datesTab" text="dates">
+                  <Tab fx:id="datesTab">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/tab_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Tab>
                </tabs>
             </TabPane>
          </children>
       </StackPane>
-      <VBox prefHeight="40.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="40.0" prefWidth="600.0" styleClass="vbox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #123738;" />
+            <AnchorPane minHeight="65.0" prefHeight="65.0" prefWidth="1300.0" />
          </children>
       </VBox>
    </children>
