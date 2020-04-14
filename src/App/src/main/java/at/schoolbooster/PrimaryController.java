@@ -26,10 +26,10 @@ public class PrimaryController {
 
     @FXML
     private void initialize() throws FileNotFoundException {
-        configureTabPane();
+
     }
 
-    @FXML
+    /*@FXML
     public void configureTabPane() throws FileNotFoundException {
 
         tabContainer.setTabMinWidth(tabWidth);
@@ -56,5 +56,5 @@ public class PrimaryController {
 
         tab.setText("");
         tab.setGraphic(imageView);
-    }
+    }*/
 }
