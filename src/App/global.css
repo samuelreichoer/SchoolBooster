@@ -1,8 +1,7 @@
 .root {
     -fx-base: white;
     -fx-color: -fx-base;
-
-    -fx-font-family: "Montserrat";
+    /*-fx-font-family: "Montserrat";*/
     -fx-accent: rgb(246, 246, 246);
     -fx-default-button: -fx-accent;
     -jfx-primary-color: -fx-accent;
@@ -43,11 +42,15 @@
 .tab:selected {
     -fx-background-color: #3f5b58;
     -fx-background-radius: 0;
-    -fx-background-insets: 0;
+    -fx-background-insets: -10;
+
+    -fx-border-width: 3;
+    -fx-border-color: white;
+    -fx-border-style: none solid dotted dashed;
 }
 
 .tab:focused {
-  -fx-focus-color: transparent;
+    -fx-focus-color: transparent;
 }
 
 .tab-pane *.tab-header-background {
