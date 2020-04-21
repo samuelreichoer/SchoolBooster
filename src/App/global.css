@@ -46,7 +46,7 @@
 
     -fx-border-width: 3;
     -fx-border-color: white;
-    -fx-border-style: none solid dotted dashed;
+    -fx-border-style: solid;
 }
 
 .tab:focused {
