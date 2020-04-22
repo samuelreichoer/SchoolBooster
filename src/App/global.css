@@ -66,3 +66,9 @@
     -fx-focus-color: transparent;
     -fx-border-color: transparent;
 }
+
+.taskbox{
+    -fx-background-color: transparent;
+    -fx-border-color: #123738;
+
+}

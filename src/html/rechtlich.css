@@ -89,13 +89,13 @@ body{
 
 /*----------------------------------------------footer---------------------------------------------------------*/
 
-.bottom-img{
-    width: 100%;
-}
-
 #footer{
     background-image: linear-gradient(to right, #58a565,	#1d8d5d) !important;
     color: #ffffff;
+}
+
+.bottom-img{
+    width: 100%;
 }
 
 .brand{
@@ -123,19 +123,17 @@ body{
     color: #ffffff !important;
     padding: 8px, 25px;
     border: none !important;
-    border-radius: 20px;
+    border-radius: 2em;
     background-color: #123738 !important;
-    margin-top: 20px;
+    margin-top: 1em;
+    margin-bottom: 2em;
     text-align: center;
   }
    
-  .footer_section3{
-    transform: translateY(30px);
-  }
 
   .copyright{
-      margin-bottom: 0px;
-      padding-bottom: 20px;
+      margin-bottom: 0%;
+      padding-bottom: 2em;
       text-align: center;
   }
 

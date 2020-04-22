@@ -172,6 +172,31 @@ body{
     transform: translateY(30%);
 }
 
+
+/*---------------------Faecher-------------------------*/
+.title4::before{
+    content: '';
+    background: #1d8d5d;
+    height: 5px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(70px);
+    text-align: center;
+}
+
+.h2faecher{
+    text-align: center;
+}
+
+.faecher{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+
 /*-------------------verifizierung---------------------*/
 
 .title2::before{
@@ -272,27 +297,23 @@ body{
   .col-in {
     display: absolute;
    
-    transform: translate(0, +10%);
+    transform: translate(0, +20%);
   }
 
   .subscribe{
     color: #ffffff !important;
     padding: 8px, 25px;
     border: none !important;
-    border-radius: 20px;
+    border-radius: 2em;
     background-color: #123738 !important;
-    margin-top: 20px;
+    margin-top: 1em;
+    margin-bottom: 2em;
     text-align: center;
   }
    
-  .footer_section3{
-    transform: translateY(30px);
-  }
 
   .copyright{
-      margin-bottom: 0px;
-      padding-bottom: 20px;
+      margin-bottom: 0%;
+      padding-bottom: 2em;
       text-align: center;
   }
-
-
