@@ -8,6 +8,7 @@ html, body{
     font-family: sans-serif;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(to right, 	#58a565,	#1d8d5d);
 
 }
 .logo{transition:all 300ms;-webkit-transition: all 300ms;-moz-transition: all 300ms; -o-transition: all 300ms;}
@@ -70,29 +71,25 @@ html, body{
 
 /*----------------------------Banner--------------------------------*/
 
-.login{
+.banner{
     min-height: 100% !important;
     background-image: linear-gradient(to right, #58a565,	#1d8d5d) !important;
 
 }
 
-.box{
+.banner{
     top: 50%;
     left: 50%;
-    transform: translate(0%, 5%);
+    transform: translate(0%, 30%);
 }
 .setup{
     font-weight: 600;
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 0px;
-    color: #123738;
+    color: #ffffff;
 }
 
-.setup-beschreibung{
-    font-weight: 600;
-    font-size: 20px;
-    color: #123738;
-}
+
 
 
 
@@ -102,18 +99,7 @@ html, body{
     color: white;
 }
 
-.title::before{
-    content: '';
-    background: #ffffff;
-    height: 5px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    transform: translateY(80px)
 
-
-}
 
 .hr { 
     width: 100%; 
