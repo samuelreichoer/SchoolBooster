@@ -16,7 +16,7 @@ jobs:
           command: |
             cd /www/dev/schoolbooster
             gitHash=$(git rev-parse HEAD)
-            cd /www/pilot/schoolbooster
+            cd /www/active/schoolbooster
             git fetch origin
             git stash
             git checkout master
