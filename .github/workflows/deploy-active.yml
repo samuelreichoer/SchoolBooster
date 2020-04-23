@@ -1,0 +1,23 @@
+name: Deploy to schoolbooster.at
+
+on:
+  push:
+    branches:
+      - active-www
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy to schoolbooster.at
+        uses: JimCronqvist/action-ssh@master
+        with:
+          hosts: "${{ secrets.GIT_SSH_USER }}@${{ secrets.GIT_SSH_HOST }}"
+          privateKey: ${{ secrets.GIT_SSH_PRIVATE }}
+          command: |
+            cd /www/dev/schoolbooster
+            gitHash=$(git rev-parse HEAD)
+            cd /www/pilot/schoolbooster
+            git fetch origin
+            git stash
+            git checkout master
+            git merge $gitHash
