@@ -123,3 +123,5 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+*.code-workspace
