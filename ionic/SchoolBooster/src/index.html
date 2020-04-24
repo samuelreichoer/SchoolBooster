@@ -20,11 +20,94 @@
 </head>
 
 <body>
-  <app-root>
-    <button ion-button large block clear icon-only>
-      <ion-icon name="md-list">
-    </button>
-  </app-root>
+  <ion-app>
+    <ion-tabs>
+
+      <ion-tab tab="stundenplan">
+        <ion-header translucent>
+          <ion-toolbar>
+            <ion-title>Stundenplan</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Stundenplan</h1>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="kalender">
+        <ion-header translucent>
+          <ion-toolbar>
+            <ion-title>Kalender</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Kalender</h1>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="checklist">
+        <ion-header translucent>
+          <ion-toolbar>
+            <ion-title>Checklist</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Checklist</h1>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="tutoren">
+        <ion-header translucent>
+          <ion-toolbar>
+            <ion-title>Tutoren</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Tutoren</h1>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="messenger">
+        <ion-header translucent>
+          <ion-toolbar>
+            <ion-title>Messenger</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+          <h1>Messenger</h1>
+        </ion-content>
+      </ion-tab>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="stundenplan">
+      <ion-label>Stundenplan</ion-label>
+      <ion-icon name="stundenplan"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="kalender">
+      <ion-label>Kalender</ion-label>
+      <ion-icon name="kalender"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="checklist">
+      <ion-label>Checkliste</ion-label>
+      <ion-icon name="checklist"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="tutoren">
+      <ion-label>Tutoren</ion-label>
+      <ion-icon name="tutoren"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="messenger">
+      <ion-label>Messenger</ion-label>
+      <ion-icon name="messenger"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>
+</ion-app>
 </body>
 
 </html>
