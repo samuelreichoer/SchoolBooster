@@ -70,14 +70,21 @@ body{
 
 #banner{
     background-image: linear-gradient(to right, 	#58a565,	#1d8d5d);
-    color: #ffffff;
+    color: #ffffff !important;
     padding-top: 5%;
+    text-decoration: none;
+    min-width: 100%;
+}
+
+.important_white a{
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 .promo-title{
     font-size: 40px;
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 .play-btn{
@@ -85,10 +92,7 @@ body{
     margin: 20px;
 }
 
-#banner a{
-    color: #ffffff;
-    text-decoration: none;
-}
+
 
 .bottom-img{
     width: 100%;
@@ -107,12 +111,12 @@ body{
 .title::before{
     content: '';
     background: #1d8d5d;
-    height: 5px;
-    width: 300px;
+    height: 4px;
+    width: 8em;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(80px)
+    transform: translateY(60px)
 }
 
 
@@ -135,12 +139,12 @@ body{
 .title1::before{
     content: '';
     background: #1d8d5d;
-    height: 5px;
-    width: 320px;
+    height: 4px;
+    width: 10em;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(70px)
+    transform: translateY(60px)
 }
 
 
@@ -159,12 +163,12 @@ body{
 .title2::before{
     content: '';
     background: #1d8d5d;
-    height: 5px;
-    width: 350px;
+    height: 4px;
+    width: 9em;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(80px)
+    transform: translateY(60px)
 
 
 }
@@ -173,12 +177,12 @@ body{
 .title3::before{
     content: '';
     background: #1d8d5d;
-    height: 5px;
-    width: 400px;
+    height: 4px;
+    width: 10em;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(80px)
+    transform: translateY(60px)
 
 
 }
@@ -276,3 +280,4 @@ body{
       padding-bottom: 2em;
       text-align: center;
   }
+
