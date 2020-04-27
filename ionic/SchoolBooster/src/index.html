@@ -1,112 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SchoolBooster</title>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Ionic App</title>
+        <base href="/" />
 
-  <base href="/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
 
-  <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-tap-highlight" content="no" />
+        <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
 
-  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+        <!-- add to homescreen for ios -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    </head>
+    <body>
+        <ion-app>
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons>
+                        <ion-button><img src="assets/icon/favicon.png" alt="back" height="40" width="40"></ion-button>
+                        <ion-button><img src="assets/icon/favicon.png" alt="forward" height="40" width="40"></ion-button>
 
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-</head>
+                        <ion-button><img src="assets/icon/favicon.png" alt="chat" height="40" width="40"></ion-button>
+                        <ion-searchbar></ion-searchbar>
 
-<body>
-  <ion-app>
-    <ion-tabs>
-      <ion-tab tab="stundenplan">
-        <ion-header translucent>
-          <ion-toolbar>
-            <ion-title>Stundenplan</ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content fullscreen class="ion-padding">
-          <h1>Stundenplan</h1>
-        </ion-content>
-      </ion-tab>
-
-      <ion-tab tab="kalender">
-        <ion-header translucent>
-          <ion-toolbar>
-            <ion-title>Kalender</ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content fullscreen class="ion-padding">
-          <h1>Kalender</h1>
-        </ion-content>
-      </ion-tab>
-
-      <ion-tab tab="checklist">
-        <ion-header translucent>
-          <ion-toolbar>
-            <ion-title>Checklist</ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content fullscreen class="ion-padding">
-          <h1>Checklist</h1>
-        </ion-content>
-      </ion-tab>
-
-      <ion-tab tab="tutoren">
-        <ion-header translucent>
-          <ion-toolbar>
-            <ion-title>Tutoren</ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content fullscreen class="ion-padding">
-          <h1>Tutoren</h1>
-        </ion-content>
-      </ion-tab>
-
-      <ion-tab tab="messenger">
-        <ion-header translucent>
-          <ion-toolbar>
-            <ion-title>Messenger</ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content fullscreen class="ion-padding">
-          <h1>Messenger</h1>
-        </ion-content>
-      </ion-tab>
-
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="stundenplan">
-      <ion-label>Stundenplan</ion-label>
-      <ion-icon name="stundenplan"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="kalender">
-      <ion-label>Kalender</ion-label>
-      <ion-icon name="kalender"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="checklist">
-      <ion-label>Checkliste</ion-label>
-      <ion-icon name="checklist"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="tutoren">
-      <ion-label>Tutoren</ion-label>
-      <ion-icon name="tutoren"></ion-icon>
-    </ion-tab-button>
-    <ion-tab-button tab="messenger">
-      <ion-label>Messenger</ion-label>
-      <ion-icon name="messenger"></ion-icon>
-    </ion-tab-button>
-  </ion-tab-bar>
-
-</ion-tabs>
-</ion-app>
-</body>
-
+                        <ion-button><img src="assets/icon/favicon.png" alt="profile" height="40" width="40"></ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-split-pane when="xs" contentID="my_content">
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Stundenplan" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Checkliste" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Termine" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Tutoren" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Messenger" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Hilfe" height="40" width="40">
+                    </ion-button> <br>
+                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                        <img src="assets/icon/favicon.png" alt="Einstellungen" height="40" width="40">
+                    </ion-button> <br>
+                </ion-split-pane>
+            </ion-content>
+        </ion-app>
+    </body>
 </html>
