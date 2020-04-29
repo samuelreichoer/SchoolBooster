@@ -1,1 +1,10 @@
+$bgcolor_tabs: #123738;
+$textcolor_tabs: white;
+$fontsize_tabs: 10px;
 
+
+.body{
+    background-color: $bgcolor_tabs;
+    color: $textcolor_tabs;
+    font-size: $fontsize_tabs;
+}
