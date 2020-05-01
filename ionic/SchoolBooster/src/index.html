@@ -34,27 +34,45 @@
             </ion-header>
             <ion-content>
                 <ion-split-pane when="xs" contentID="my_content">
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Stundenplan" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Checkliste" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Termine" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Tutoren" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Messenger" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Hilfe" height="40" width="40">
-                    </ion-button> <br>
-                    <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                        <img src="assets/icon/favicon.png" alt="Einstellungen" height="40" width="40">
-                    </ion-button> <br>
+                    <ion-grid>
+                        <ion-col>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Stundenplan" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Checkliste" height="40" width="40">
+                                </ion-button> 
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Termine" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Tutoren" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Messenger" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Hilfe" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                            <ion-row>
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                    <img src="assets/icon/favicon.png" alt="Einstellungen" height="40" width="40">
+                                </ion-button>
+                            </ion-row>
+                        </ion-col>
+                    </ion-grid>
                 </ion-split-pane>
             </ion-content>
         </ion-app>
