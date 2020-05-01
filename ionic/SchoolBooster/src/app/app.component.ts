@@ -39,7 +39,7 @@ export class AppComponent {
     this.isSearch=false;
     this.isCamera=false;
   
-    letnewTab: string='';
+    let newTab: String='';
   
     switch (whichPage) {
       case'List':
@@ -68,6 +68,6 @@ export class AppComponent {
         break;
      }
   
-     this.nav.setRoot(newTab);
+     //this.nav.setRoot(newTab);
   }
 }
