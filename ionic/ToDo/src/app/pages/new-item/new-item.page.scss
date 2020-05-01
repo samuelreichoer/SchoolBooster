@@ -1,4 +1,4 @@
-$label-md-text-color-focused: #123738;
+$label-md-text-color-focused: #123738 !default;
 
 
 .submit-btn {
@@ -19,6 +19,6 @@ $label-md-text-color-focused: #123738;
   --highlight-background: #123738;
 }
 
-.ion-label{
-  --color: $label-md-text-color-focused!important;
-  }
+.item-has-focus ion-label.ion-color{
+  color: $label-md-text-color-focused;
+}

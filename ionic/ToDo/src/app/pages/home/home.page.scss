@@ -15,3 +15,23 @@
 .checkbox{
     box-shadow: none;
 }
+
+
+.taskbox{
+    --background-hover: #799696;
+    --background: #4F7575 !important;
+    --color: #ffffff;
+    margin-bottom: 5%;
+    box-shadow: none;
+}
+
+.deletetask{
+    --background-checked: none;
+    --border-color: none;
+    --border-color-checked: #ffffff;
+    --size: 20px;
+    margin-right: 2em;
+}
+
+
+
