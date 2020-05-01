@@ -19,7 +19,7 @@
     </head>
     <body>
         <ion-app>
-            <ion-header>
+            <ion-header class="ion-no-border">
                 <ion-toolbar>
                     <ion-buttons>
                         <ion-button><img src="assets/icon/favicon.png" alt="back" height="40" width="40"></ion-button>
@@ -33,8 +33,8 @@
                 </ion-toolbar>
             </ion-header>
             <ion-content>
-                <ion-split-pane when="xs" contentID="my_content">
-                    <ion-grid>
+                <ion-split-pane when="xs"contentId="button_row">
+                    <ion-grid contentId="button_row">
                         <ion-col>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
