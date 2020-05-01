@@ -1,0 +1,37 @@
+.taskbtn{
+    --background: none;
+    --border-style: solid;
+    --border-color: #123738;
+    --border-weight: 500;
+    --border-radius: 10px;
+    --color: #123738;
+    --box-shadow: none;
+    --background-hover: none;
+    font-size: large;
+    font-weight: 550;
+    display: block;
+}
+
+.checkbox{
+    box-shadow: none;
+}
+
+
+.taskbox{
+    --background-hover: #799696;
+    --background: #4F7575 !important;
+    --color: #ffffff;
+    margin-bottom: 5%;
+    box-shadow: none;
+}
+
+.deletetask{
+    --background-checked: none;
+    --border-color: none;
+    --border-color-checked: #ffffff;
+    --size: 20px;
+    margin-right: 2em;
+}
+
+
+
