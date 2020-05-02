@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 <ion-header>
   <ion-toolbar color="none">
     <ion-title>Header</ion-title>
@@ -11,7 +13,7 @@
     <ion-row>
       <ion-col size-xl="6" offset-xl="3" >
         <ion-card class="checkbox" >
-          <ion-button [routerLink]="['/new-item']" class="taskbtn">
+          <ion-button [routerLink]="['/new-item']" class="taskbtn" sizie="default">
             Neue Aufgabe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +
           </ion-button>
         </ion-card>
@@ -35,6 +37,9 @@
                 {{ item.title }}
                 
               </ion-label>
+              <ion-button class="editbtn" [routerLink]="['/update-item', item.id]" >
+                <ion-icon slot="icon-only" class="edittask" name="create" size="large"></ion-icon>
+              </ion-button>
             </ion-item>
 
           </ion-card>

@@ -10,6 +10,7 @@
     font-size: large;
     font-weight: 550;
     display: block;
+    --height: 200px !important;
 }
 
 .checkbox{
@@ -21,17 +22,33 @@
     --background-hover: #799696;
     --background: #4F7575 !important;
     --color: #ffffff;
-    margin-bottom: 5%;
+    border: none !important;
+    margin-bottom: 4%;
     box-shadow: none;
+}
+.tasks{
+    box-shadow: none;
+    border: none !important;
 }
 
 .deletetask{
     --background-checked: none;
-    --border-color: none;
+    border: none !important;
     --border-color-checked: #ffffff;
     --size: 20px;
     margin-right: 2em;
 }
+
+.edittask{
+    --font-color: #ffffff !important;
+}
+
+.editbtn{
+    --background: none;
+    --box-shadow: none !important;
+    
+}
+
 
 
 
