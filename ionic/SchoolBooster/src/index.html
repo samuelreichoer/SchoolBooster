@@ -20,55 +20,63 @@
     <body>
         <ion-app>
             <ion-header class="ion-no-border">
-                <ion-toolbar>
-                    <ion-buttons>
-                        <ion-button><img src="assets/icon/favicon.png" alt="back" height="40" width="40"></ion-button>
-                        <ion-button><img src="assets/icon/favicon.png" alt="forward" height="40" width="40"></ion-button>
-
-                        <ion-button><img src="assets/icon/favicon.png" alt="chat" height="40" width="40"></ion-button>
-                        <ion-searchbar></ion-searchbar>
-
-                        <ion-button><img src="assets/icon/favicon.png" alt="profile" height="40" width="40"></ion-button>
-                    </ion-buttons>
+                <ion-toolbar contendId="toolbar">
+                    <ion-grid contendId="toolbar">
+                        <ion-row>
+                            <ion-col size-xl="auto">
+                                <ion-buttons>
+                                    <ion-button><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
+                                    <ion-button><img src="assets/icon/favicon.png" alt="forward" height="40" width="40"></ion-button>
+                                    <ion-button><img src="assets/icon/favicon.png" alt="chat" height="40" width="40"></ion-button>
+                                </ion-buttons>
+                            </ion-col>
+                            <ion-col>
+                                <ion-searchbar placeholder="Tutoren suchen" type="text"></ion-searchbar>
+                            </ion-col>
+                            <ion-col size-xl="auto">
+                                <ion-button><img src="assets/icon/favicon.png" alt="profile" height="40" width="40"></ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
                 </ion-toolbar>
             </ion-header>
             <ion-content>
-                <ion-split-pane when="xs"contentId="button_row">
-                    <ion-grid contentId="button_row">
+                <ion-split-pane when="xs"contentId="buttonrow">
+                    <ion-grid contentId="buttonrow">
                         <ion-col>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Stundenplan" height="40" width="40">
+                                    <ion-icon name="pizza"></ion-icon>
                                 </ion-button>
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Checkliste" height="40" width="40">
+                                    <ion-icon name="checkmark-sharp"></ion-icon>
                                 </ion-button> 
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Termine" height="40" width="40">
+                                    <ion-icon name="calendar"></ion-icon>
                                 </ion-button>
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Tutoren" height="40" width="40">
+                                    <ion-icon name="school"></ion-icon>
                                 </ion-button>
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Messenger" height="40" width="40">
+                                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
                                 </ion-button>
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Hilfe" height="40" width="40">
+                                    <ion-icon name="help-circle-outline"></ion-icon>
                                 </ion-button>
                             </ion-row>
                             <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
-                                    <img src="assets/icon/favicon.png" alt="Einstellungen" height="40" width="40">
+                                    <ion-icon name="settings-outline"></ion-icon>
                                 </ion-button>
                             </ion-row>
                         </ion-col>
