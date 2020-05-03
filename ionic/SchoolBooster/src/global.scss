@@ -27,13 +27,16 @@
 
 ion-icon {
     color: white;
-
-    size: large;
+    font-size: 35px;
 }
 
 ion-button {
-    size: large;
-    --expand: full;
+    flex-direction: column!important;
+
+    height: 55px;
+    width: 55px;
+
+    border-radius: 0;
 }
 
 ion-split-pane {
