@@ -25,6 +25,17 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-icon {
+    color: white;
+
+    size: large;
+}
+
+ion-button {
+    size: large;
+    --expand: full;
+}
+
 ion-split-pane {
     min-width: 70px!important;
     max-width: 70px!important;
@@ -41,6 +52,9 @@ ion-toolbar {
 ion-searchbar {
     max-width: 40%;
     min-width: 40%;
+    max-height: 90%;
+    min-height: 90%;
+
     margin-left: 23.5%;
 }
 
