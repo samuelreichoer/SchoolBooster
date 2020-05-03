@@ -19,7 +19,7 @@
 
 
 .taskbox{
-    --background-hover: #799696;
+    --background-hover: #4F7575;
     --background: #4F7575 !important;
     --color: #ffffff;
     border: none !important;
@@ -29,15 +29,20 @@
 .tasks{
     box-shadow: none;
     border: none !important;
+    display: inline;
 }
 
-.deletetask{
+.taskdone{
     --background-checked: none;
     border: none !important;
     --border-color-checked: #ffffff;
+    --border-color: #ffffff;
     --size: 20px;
     margin-right: 2em;
 }
+.taskdone:checked + .taskxyz {
+    text-decoration: line-through !important;
+  }
 
 .edittask{
     --font-color: #ffffff !important;

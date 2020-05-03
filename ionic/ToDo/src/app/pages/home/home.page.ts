@@ -19,5 +19,5 @@ export class HomePage implements OnInit {
   ngOnInit(){
     this.items = this.itemService.getItems();
   }
-
+  get
 }
