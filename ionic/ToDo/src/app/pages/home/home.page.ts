@@ -20,4 +20,6 @@ export class HomePage implements OnInit {
     this.items = this.itemService.getItems();
   }
   get
+
+  
 }

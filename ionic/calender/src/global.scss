@@ -24,27 +24,3 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-
-ion-split-pane {
-    min-width: 70px!important;
-    max-width: 70px!important;
-
-    background-color: var(--ion-color-primary);
-}
-
-ion-toolbar {
-    --background: var(--ion-color-primary);
-    --border-width: 0px;
-    box-shadow: none;
-}
-
-ion-searchbar {
-    max-width: 40%;
-    min-width: 40%;
-    margin-left: 23.5%;
-}
-
-ion-button {
-    --box-shadow: none;
-}
-
