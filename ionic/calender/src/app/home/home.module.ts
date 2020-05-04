@@ -12,6 +12,7 @@ import { NgCalendarModule  } from 'ionic2-calendar';
     CommonModule,
     FormsModule,
     IonicModule,
+    NgCalendarModule,
     RouterModule.forChild([
       {
         path: '',
@@ -21,5 +22,6 @@ import { NgCalendarModule  } from 'ionic2-calendar';
     NgCalendarModule
   ],
   declarations: [HomePage]
+
 })
 export class HomePageModule {}

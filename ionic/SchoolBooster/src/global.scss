@@ -25,10 +25,25 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-icon {
+    color: white;
+    font-size: 28px;
+}
+
+.button-text {
+    font-size: 10px;
+}
+
+ion-button {
+    height: 55px;
+    width: 55px;
+    border-radius: 0;
+    --box-shadow: none;
+}
+
 ion-split-pane {
     min-width: 70px!important;
     max-width: 70px!important;
-
     background-color: var(--ion-color-primary);
 }
 
@@ -41,10 +56,14 @@ ion-toolbar {
 ion-searchbar {
     max-width: 40%;
     min-width: 40%;
-    margin-left: 23.5%;
-}
+    max-height: 90%;
+    min-height: 90%;
+
 
 ion-button {
     --box-shadow: none;
+	margin-left: 23.5%;
 }
 
+
+    
