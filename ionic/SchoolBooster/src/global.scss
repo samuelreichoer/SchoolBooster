@@ -27,22 +27,23 @@
 
 ion-icon {
     color: white;
-    font-size: 35px;
+    font-size: 28px;
+}
+
+.button-text {
+    font-size: 10px;
 }
 
 ion-button {
-    flex-direction: column!important;
-
     height: 55px;
     width: 55px;
-
     border-radius: 0;
+    --box-shadow: none;
 }
 
 ion-split-pane {
     min-width: 70px!important;
     max-width: 70px!important;
-
     background-color: var(--ion-color-primary);
 }
 
@@ -59,8 +60,4 @@ ion-searchbar {
     min-height: 90%;
 
     margin-left: 23.5%;
-}
-
-ion-button {
-    --box-shadow: none;
 }
