@@ -38,20 +38,6 @@
                     <ion-grid contentId="buttonrow">
                         <ion-col>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">  
-                                    <ion-grid>
-                                        <ion-col>
-                                            <ion-row>
-                                                <ion-icon name="pizza"></ion-icon>
-                                            </ion-row>
-                                            <ion-row>
-                                                <p class="button-text">Pizza</p>
-                                            </ion-row>
-                                        </ion-col>
-                                    </ion-grid>    
-                                </ion-button>
-                            </ion-row>
-                            <ion-row>
                                 <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('checklist')">
                                     <ion-icon name="checkmark-sharp"></ion-icon>
                                     <ion-grid>
@@ -139,6 +125,26 @@
                         </ion-col>
                     </ion-grid>
                 </ion-split-pane>
+                <ion-tabs>
+                    <ion-tab tab="checklist">
+                        <p>C</p>
+                    </ion-tab>
+                    <ion-tab tab="timetable">
+                        <p>t</p>
+                    </ion-tab>
+                    <ion-tab tab="tutors">
+                        <p>tu</p>
+                    </ion-tab>
+                    <ion-tab tab="chat">
+                        <p>Ch</p>
+                    </ion-tab>
+                    <ion-tab tab="help">
+                        <p>h</p>
+                    </ion-tab>
+                    <ion-tab tab="settings">
+                        <p>s</p>
+                    </ion-tab>
+                </ion-tabs>
             </ion-content>
         </ion-app>
     </body>

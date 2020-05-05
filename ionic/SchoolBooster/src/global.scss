@@ -48,6 +48,14 @@ ion-split-pane {
     background-color: var(--ion-color-primary);
 }
 
+ion-split-pane ion-button {
+    height: 65px;
+    width: 65px;
+    border-radius: 0;
+    --box-shadow: none;
+    margin-left: 0!important;
+}
+
 .bottom-buttons {
     vertical-align: bottom;    
 }
