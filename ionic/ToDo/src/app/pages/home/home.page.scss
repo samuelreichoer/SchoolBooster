@@ -37,7 +37,7 @@
     border: none !important;
     --border-color-checked: #ffffff;
     --border-color: #ffffff;
-    --size: 20px;
+    --size: 25px;
     margin-right: 2em;
 }
 .taskdone:checked + .taskxyz {
@@ -51,6 +51,7 @@
 .editbtn{
     --background: none;
     --box-shadow: none !important;
+    --background-hover: none;
     
 }
 

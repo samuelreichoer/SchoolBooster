@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 
 <ion-header>
   <ion-toolbar color="none">
@@ -27,17 +27,22 @@
         <ion-col size-xl="6" offset-xl="3" >
           <ion-card class="tasks" >
             <ion-item  class="taskbox" *ngFor="let item of items" >
+              
               <ion-note>
                 <ion-checkbox class="taskdone" name="taskbox">
                 </ion-checkbox>
               </ion-note>
      
-          <ion-label class="taskxyz"  [routerLink]="['/update-item']">
+          <ion-label class="taskxyz" >
                 {{ item.title }}
                 
+                
               </ion-label>
-              <ion-button class="editbtn" type="submit" >
+             <ion-button class="editbtn" type="submit" (click)="removeItem(item)">
                 <ion-icon  slot="end" class="edittask" name="trash" size="large"></ion-icon>
+              </ion-button>
+              <ion-button class="editbtn" type="submit"  [routerLink]="['/update-item', item.id]" > 
+              <ion-icon  slot="end" class="edittask" name="create" size="large"></ion-icon>
               </ion-button>
             </ion-item>
 

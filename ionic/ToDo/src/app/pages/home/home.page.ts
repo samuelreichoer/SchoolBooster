@@ -10,16 +10,25 @@ import { ItemService } from '../../services/item.service';
 export class HomePage implements OnInit {
 
   items: Array<any>;
+  
 
   constructor(
     private router: Router,
     public itemService: ItemService
   ){}
+  
+  removeItem(item){
+    let index = this.items.indexOf(item);
 
+    if(index > -1){
+      this.items.splice(index, 1);
+    }
+}
+
+  
   ngOnInit(){
     this.items = this.itemService.getItems();
   }
   get
 
-  
 }
