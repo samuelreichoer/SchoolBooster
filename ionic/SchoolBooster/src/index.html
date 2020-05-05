@@ -12,10 +12,6 @@
         <meta name="msapplication-tap-highlight" content="no" />
 
         <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-        <!-- add to homescreen for ios -->
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     </head>
     <body>
         <ion-app>
@@ -56,7 +52,7 @@
                                 </ion-button>
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('checklist')">
                                     <ion-icon name="checkmark-sharp"></ion-icon>
                                     <ion-grid>
                                         <ion-col>
@@ -71,7 +67,7 @@
                                 </ion-button> 
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('timetable')">
                                     <ion-grid>
                                         <ion-col>
                                             <ion-row>
@@ -85,7 +81,7 @@
                                 </ion-button>
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('tutors')">
                                     <ion-grid>
                                         <ion-col>
                                             <ion-row>
@@ -99,7 +95,7 @@
                                 </ion-button>
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('chat')">
                                     <ion-grid>
                                         <ion-col>
                                             <ion-row>
@@ -113,7 +109,7 @@
                                 </ion-button>
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('help')">
                                     <ion-grid>
                                         <ion-col>
                                             <ion-row>
@@ -127,7 +123,7 @@
                                 </ion-button>
                             </ion-row>
                             <ion-row>
-                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('List')">
+                                <ion-button [color]="isList ? 'primary' : 'light'" (click)="togglePage('settings')">
                                     <ion-grid>
                                         <ion-col>
                                             <ion-row>

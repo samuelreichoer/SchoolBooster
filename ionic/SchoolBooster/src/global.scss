@@ -28,6 +28,7 @@
 ion-icon {
     color: white;
     font-size: 28px;
+    align-self: center;
 }
 
 .button-text {
@@ -45,6 +46,10 @@ ion-split-pane {
     min-width: 70px!important;
     max-width: 70px!important;
     background-color: var(--ion-color-primary);
+}
+
+.bottom-buttons {
+    vertical-align: bottom;    
 }
 
 ion-toolbar {
