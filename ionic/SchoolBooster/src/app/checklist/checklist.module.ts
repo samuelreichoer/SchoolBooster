@@ -1,27 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePage } from './home.page';
+import { ChecklistPageRoutingModule } from './checklist-routing.module';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: HomePage
-  }
-];
-
+import { ChecklistPage } from './checklist.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    ChecklistPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [ChecklistPage]
 })
-export class HomePageModule {}
+export class ChecklistPageModule {}
