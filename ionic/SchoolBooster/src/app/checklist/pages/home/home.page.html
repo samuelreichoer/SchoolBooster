@@ -1,0 +1,54 @@
+
+
+<ion-header>
+  <ion-toolbar color="none">
+    <ion-title>Header</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-text-center">
+    <br>
+    <br>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3" >
+        <ion-card class="checkbox" >
+          <ion-button [routerLink]="['/new-item']" class="taskbtn" size="large">
+            Neue Aufgabe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-xl="6" offset-xl="3" >
+          <ion-card class="tasks" >
+            <ion-item  class="taskbox" *ngFor="let item of items" >
+              
+              <ion-note>
+                <ion-checkbox class="taskdone" name="taskbox">
+                </ion-checkbox>
+              </ion-note>
+     
+          <ion-label class="taskxyz" >
+                {{ item.title }}
+                
+                
+              </ion-label>
+             <ion-button class="editbtn" type="submit" (click)="removeItem(item)">
+                <ion-icon  slot="end" class="edittask" name="trash" size="large"></ion-icon>
+              </ion-button>
+              <ion-button class="editbtn" type="submit"  [routerLink]="['/update-item', item.id]" > 
+              <ion-icon  slot="end" class="edittask" name="create" size="large"></ion-icon>
+              </ion-button>
+            </ion-item>
+
+          </ion-card>
+         </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,24 @@
+$label-md-text-color-focused: #123738 !default;
+
+
+.submit-btn {
+  margin-top: 30px;
+  --background: #123738;
+  --border-color: #123738;
+  --border-radius: 10px;
+  --color: #ffffff;
+  --background-hover: #3F5B58;
+  font-size: large;
+  font-weight: 550;
+  display: block;
+}
+
+.item{
+  --color: #000000;
+ 
+  --highlight-background: #123738;
+}
+
+.item-has-focus ion-label.ion-color{
+  color: $label-md-text-color-focused;
+}

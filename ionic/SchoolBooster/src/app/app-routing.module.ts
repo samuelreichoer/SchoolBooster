@@ -10,7 +10,31 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'timetable',
+    loadChildren: () => import('./timetable/timetable.module').then( m => m.TimetablePageModule)
   },
+  {
+    path: 'tutoren',
+    loadChildren: () => import('./tutoren/tutoren.module').then( m => m.TutorenPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'help',
+    loadChildren: () => import('./help/help.module').then( m => m.HelpPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'checklist',
+    loadChildren: () => import('./checklist/checklist.module').then( m => m.ChecklistPageModule)
+  },
+
 ];
 
 @NgModule({

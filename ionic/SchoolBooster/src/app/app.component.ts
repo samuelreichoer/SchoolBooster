@@ -17,7 +17,7 @@ export class AppComponent {
     isHelp: boolean;
     isSettings: boolean;
 
-    @ViewChild('tabs') nav: IonTabs;
+    @ViewChild('tabs', {static: false}) nav: IonTabs;
 
     constructor(
         private platform: Platform,
