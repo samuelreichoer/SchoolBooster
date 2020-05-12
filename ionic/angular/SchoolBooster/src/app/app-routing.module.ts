@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'timetable',
     loadChildren: () => import('./timetable/timetable.module').then( m => m.TimetablePageModule)
   },
@@ -33,13 +35,13 @@ const routes: Routes = [
   {
     path: 'checklist',
     loadChildren: () => import('./checklist/checklist.module').then( m => m.ChecklistPageModule)
-  },
-
+  }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    IonicModule
   ],
   exports: [RouterModule]
 })
